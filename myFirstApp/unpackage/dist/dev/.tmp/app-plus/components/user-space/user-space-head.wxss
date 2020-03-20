@@ -1,0 +1,40 @@
+
+.user-space-head-btn.data-v-1227ff9c{
+	background: #FFE993;
+	color: #333333;
+	border: 1rpx solid #FFE993;
+	padding: 0 15rpx;
+	border-radius: 10rpx;
+	font-size: 28rpx;
+}
+.active.data-v-1227ff9c{
+	background:none;
+	color: #FFFFFF;
+	border: 1rpx solid #FFFFFF;
+}
+.user-space-head.data-v-1227ff9c{
+	position: relative;
+	height: 500rpx;
+	overflow: hidden;
+}
+.user-space-head>image.data-v-1227ff9c{
+	width: 100%;
+}
+.user-space-head-info.data-v-1227ff9c{
+	position: absolute;
+	top: 150rpx;
+	left: 33%;
+	width: 30%;
+}
+.user-space-head-info>image.data-v-1227ff9c{
+	width: 150rpx;
+	height: 150rpx;
+	border-radius: 100%;
+}
+.user-space-head-info>view.data-v-1227ff9c:first-of-type{
+	color: #FFFFFF;
+	font-size: 35rpx;
+	font-weight: bold;
+	text-shadow: 2rpx 2rpx 10rpx #333333;/*文字添加淡淡的黑色阴影*/
+}
+

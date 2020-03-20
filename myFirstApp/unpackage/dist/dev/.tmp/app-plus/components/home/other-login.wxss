@@ -1,0 +1,12 @@
+
+.other-login.data-v-8263094c{
+	padding: 20rpx 80rpx;
+}
+.other-login>view>view.data-v-8263094c{
+	width:100rpx;
+	height:100rpx;
+	border-radius:100%;
+	font-size: 55rpx;
+	color: #FFFFFF;
+}
+

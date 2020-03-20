@@ -1,0 +1,19 @@
+
+.formBlock{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;align-items:center;padding:12rpx 20rpx 8rpx 20rpx;border-bottom:solid 1rpx #F2F2F2;}
+.blockName{width:24%;height:75rpx;text-align:center;position: relative;}
+.blockName>view{position:absolute;bottom:0rpx;font-size:38rpx;}
+.blockField{width:73%;height:75rpx;}
+.field-textarea{height:auto;}
+.blockField>input{border-radius:10rpx;border:solid 1px #D8D8D8;font-size:35rpx;padding:11rpx 20rpx 8rpx 20rpx;}
+.input-placeholder{color:#AAAAAA;font-size:35rpx}
+.customPicker{height:95%;padding:0 20rpx;border-radius:10rpx;outline: #2C405A;border:solid 1px #D8D8D8;position: relative;}
+.picker-input {height:100%;width:95%; line-height:65rpx; font-size:35rpx;color:#AAAAAA;background: #FFF;position: absolute;}
+.picker-icon{position: absolute;right:20rpx;top:5px;}
+.uni-icon-arrowdown{color:#9B9B9B;font-size:25rpx;}
+.radio{font-size: 32rpx;}
+.uni-textarea>textarea{border:solid 1px #D8D8D8;font-size:35rpx;border-radius:10rpx;}
+.formBlock>.formBtn{display:-webkit-box;display:-webkit-flex;display:flex;height:100%;}
+.center{-webkit-box-pack: center!important;-webkit-justify-content: center!important;justify-content: center!important;}
+.uni-btn-v>button{margin-right:5rpx;padding: 0 80rpx;font-size: 30rpx;}
+.login-rule view{color: #007AFF;}
+

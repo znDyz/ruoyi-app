@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"home-list{padding: ",[0,20],";}\n.",[1],"home-adv{padding: 0 ",[0,10],";}\n.",[1],"home-adv\x3ewx-image{border-radius: ",[0,20],";}\n.",[1],"userLogout{width:90%;margin: 10px 0;background: #DD524D;color: #FFFFFF;border: 0!important;}\n.",[1],"userLogout-hover{background: #171606;}\n",],undefined,{path:"./pages/home/home.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/home/home.wxml') } }));

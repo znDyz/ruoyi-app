@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "设置",
+  "scrollIndicator": "none",
+  "bounce": "none",
+  "titleNView": {
+    "autoBackButton": true
+  },
+  "usingComponents": {
+    "home-list-item": "/components/home/home-list-item"
+  }
+}

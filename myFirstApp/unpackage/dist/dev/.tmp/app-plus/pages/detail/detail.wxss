@@ -1,0 +1,75 @@
+
+.u-comment-title{
+	padding: 20rpx;
+	font-size: 30rpx;
+	font-weight: bold;
+}
+.u-comment{
+	padding: 0 20rpx;
+}
+.more-share{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 400rpx;
+	background: #FFFFFF;
+	z-index: 10000;
+}
+.more-share-title,.more-share-title{
+	padding: 25rpx;
+	font-size: 32rpx;
+}
+.more-share-body{
+	width: 100%;
+	height: 200rpx;
+	white-space: nowrap;/*不进行换行*/
+	border-bottom: 1rpx solid #EEEEEE;
+	display: -webkit-box!important;
+	display: -webkit-flex!important;
+	display: flex!important;
+	line-height:200rpx;
+}
+.more-share-item{
+	width: 25%;
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	height: 100%!important;
+}
+.more-share-item>view:first-child{
+	width: 100rpx;
+	height: 100rpx;
+	font-size:55rpx;
+	color: #FFFFFF;
+	border-radius: 100%;
+}
+.more-share-item>view:last-child{
+	color: #7A7A7A;
+}
+.more-share-hover{background: #CCCCCC;}
+.more-share-1{background: #514D4C;}
+.more-share-2{background: #2AD19B;}
+.more-share-3{background: #EE5E5E;}
+.more-share-4{background: #4A73BA;}
+.more-share-5{background: #FF9619;}
+.more-share-model{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(51, 51, 51, 0.61);
+	z-index:99;
+}
+

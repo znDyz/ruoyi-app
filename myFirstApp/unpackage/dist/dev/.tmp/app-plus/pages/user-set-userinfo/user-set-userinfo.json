@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "编辑资料",
+  "scrollIndicator": "none",
+  "bounce": "none",
+  "titleNView": {
+    "autoBackButton": true
+  },
+  "usingComponents": {
+    "mpvue-city-picker": "/components/mpvue-citypicker/mpvueCityPicker"
+  }
+}

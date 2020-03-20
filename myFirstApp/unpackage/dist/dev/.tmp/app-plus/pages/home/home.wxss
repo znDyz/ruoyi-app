@@ -1,0 +1,7 @@
+
+.home-list{padding: 20rpx;}
+.home-adv{padding: 0 10rpx;}
+.home-adv>image{border-radius: 20rpx;}
+.userLogout{width:90%;margin: 10px 0;background: #DD524D;color: #FFFFFF;border: 0!important;}
+.userLogout-hover{background: #171606;}
+

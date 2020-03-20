@@ -1,0 +1,30 @@
+
+.midTap{
+	width: 100%;
+}
+.midTap>view{
+	font-size: 32rpx;
+	padding: 0 15rpx;
+	font-weight: bold;
+	color: #969696;
+}
+.active{
+	color: #333333!important;
+}
+.nav-tab-bar-line{
+	border-top: 5rpx solid #FEDE33;
+	border-bottom: 5rpx solid #FEDE33;
+	width: 65rpx;
+	border-radius: 10rpx;
+}
+.nav-left,.nav-right{
+	margin-left: 16rpx;
+	width: 100%;
+}
+.nav-left>view,.nav-right>view{
+	font-size: 45rpx;
+}
+.nav-left>view{
+	color: #FF9619;
+}
+

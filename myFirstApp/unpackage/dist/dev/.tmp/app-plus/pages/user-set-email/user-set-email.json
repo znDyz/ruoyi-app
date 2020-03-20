@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "绑定邮箱",
+  "scrollIndicator": "none",
+  "bounce": "none",
+  "titleNView": {
+    "autoBackButton": true
+  },
+  "usingComponents": {}
+}

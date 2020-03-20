@@ -1,0 +1,76 @@
+{
+  "pages": [
+    "pages/init/init",
+    "pages/login/login",
+    "pages/login/register",
+    "pages/agreement/agreement",
+    "pages/index/index",
+    "pages/news/news",
+    "pages/paper/paper",
+    "pages/home/home",
+    "pages/search/search",
+    "pages/publish/publish",
+    "pages/topic-nav/topic-nav",
+    "pages/topic-detail/topic-detail",
+    "pages/user-list/user-list",
+    "pages/user-chat/user-chat",
+    "pages/detail/detail",
+    "pages/user-set/user-set",
+    "pages/user-set-repwd/user-set-repwd",
+    "pages/user-set-email/user-set-email",
+    "pages/user-set-userinfo/user-set-userinfo",
+    "pages/user-set-help/user-set-help",
+    "pages/user-set-about/user-set-about",
+    "pages/login/login",
+    "pages/user-space/user-space",
+    "pages/chat/chat"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "嗅百APP",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#F8F8F8",
+    "backgroundColorTop": "red"
+  },
+  "tabBar": {
+    "color": "#ADADAD",
+    "selectedColor": "#FEA42A",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "嗅事",
+        "iconPath": "/static/tabbar/sy.png",
+        "selectedIconPath": "/static/tabbar/sy-s.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "动态",
+        "iconPath": "/static/tabbar/zx.png",
+        "selectedIconPath": "/static/tabbar/zx-s.png"
+      },
+      {
+        "pagePath": "pages/paper/paper",
+        "text": "纸条",
+        "iconPath": "/static/tabbar/lt.png",
+        "selectedIconPath": "/static/tabbar/lt-s.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "我的",
+        "iconPath": "/static/tabbar/wd.png",
+        "selectedIconPath": "/static/tabbar/wd-s.png"
+      }
+    ]
+  },
+  "nvueCompiler": "uni-app",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "仿嗅百",
+  "compilerVersion": "2.6.1",
+  "usingComponents": {}
+}
