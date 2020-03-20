@@ -26,6 +26,7 @@ Vue.prototype.utils = utils;
 App.mpType = 'app'
 
 //挂载全局方法（导入我们自己定义的js第二步）	
+//测试提交！！！！！
 const app = new Vue({
     ...App,
 	config,
