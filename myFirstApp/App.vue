@@ -3,8 +3,26 @@
 		onLaunch: function() {	//app打开时调用
 			this.lib.NetWork.On();			//网路监听（用户目前断网，切换wifi）
 		},
-		onShow: function() {	//app显示时调用
-			console.log('App Show')
+		onShow: function() {	//app前台运行时调用
+			var token = uni.getStorageSync("token");
+			/* if(token!="" && token!=null && token!=undefined){
+				var username = uni.getStorageSync("username");
+				var password = uni.getStorageSync("password");
+				this.iGlobal.request({
+				    url:'/checkToken', method:'POST',
+				}).then((res)=>{
+					if(res.code=="200" && res.token){
+						uni.setStorageSync('token', res.token);
+						if(_this.rememberMe){
+							uni.setStorageSync('username', _this.username);
+							uni.setStorageSync('password', _this.password);
+						}
+						_this.toIndex();
+					} 
+				}).catch((err)=>{
+				    console.log("请求失败"+JSON.stringify(res));
+				});
+			} */
 		},
 		onHide: function() {	//app后台运行时调用
 			console.log('App Hide')
