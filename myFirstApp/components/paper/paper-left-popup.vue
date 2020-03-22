@@ -5,7 +5,7 @@
 		<view class="paper-left-popup" v-show="popupShow">
 			<view class="u-f-ac" hover-class="paper-left-popup-hover" @tap="addFriends">
 				<view class="icon iconfont icon-sousuo"></view>
-				加好友
+				加好友/群组
 			</view>
 			<view class="u-f-ac" hover-class="paper-left-popup-hover"  @tap="clearCache">
 				<view class="icon iconfont icon-qingchu"></view>

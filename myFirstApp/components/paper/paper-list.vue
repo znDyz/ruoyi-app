@@ -5,7 +5,7 @@
 			<view class="u-f-ac u-f-jb">{{item.username}}<view>{{item.time}}</view></view>
 			<view class="u-f-ac u-f-jb">
 				{{item.data}}
-				<template v-if="item.noreadnum>0">
+				<template v-if="item.noreadnum!='0'">
 					<uni-badge :text="item.noreadnum" type="error"></uni-badge>
 				</template>
 			</view>
