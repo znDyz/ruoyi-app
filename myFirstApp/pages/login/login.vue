@@ -192,8 +192,8 @@
 				uni.navigateTo({ url: 'register'});
 			},
 			toIndex(){
-				//uni.switchTab({ url: "../index/index"});
-				uni.navigateTo({ url: '../chat/chat'});
+				uni.switchTab({ url: "../index/index"});
+				//uni.navigateTo({ url: '../chat/chat'});
 			},
 			getCode(){
 				let _this = this;
