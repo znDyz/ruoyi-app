@@ -48,7 +48,6 @@ public class SysLoginService
     {
         /**
          *  verifyKey = captcha_codes:为前缀 + 用户提交的uuid
-         *  --->
          *  1.redis中查询key为：captcha_codes:uuid 存储的验证码
          *  2.redis中删除key为：captcha_codes:uuid 的验证码信息
          *  3.如果查询出来结果为null,通过异步任务
@@ -89,8 +88,9 @@ public class SysLoginService
         }
         //用户登陆成功,调用任务管理器,记录登录信息并保存到数据库
         AsyncManager.me().execute(AsyncFactory.recordLogininfor(username, Constants.LOGIN_SUCCESS, MessageUtils.message("user.login.success")));
+        //通过Authentication.getPrincipal()可以获取到代表当前用户的信息，这个对象通常是UserDetails的实例
         LoginUser loginUser = (LoginUser) authentication.getPrincipal();
-        // 生成token
+        // 生成token,//设置用户token和用户其他相关信息，并将用户信息存储至redis缓存中
         String token = tokenService.createToken(loginUser);
         return token;
     }
