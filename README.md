@@ -1,9 +1,9 @@
 ## 平台简介
 
-可以用于所有的Web应用程序，如网站管理后台，网站会员中心，CMS，CRM，OA。所有前端后台代码封装过后十分精简易上手，出错概率低。同时支持移动客户端访问。系统会陆续更新一些实用功能。
+个人用于学习，拜读若依框架
 
+可以用于所有的Web应用程序，如网站管理后台，网站会员中心，CMS，CRM，OA。
 
-参考后台模板[vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
 
 ## 内置功能
 
@@ -24,14 +24,4 @@
 15. 服务监控：监视当前系统CPU、内存、磁盘、堆栈等相关信息。
 16. 在线构建器：拖动表单元素生成相应的HTML代码。
 17. 连接池监视：监视当前系统数据库连接池状态，可进行分析SQL找出系统性能瓶颈。
-## 在线体验
-> admin/admin123  
 
-演示地址：http://vue.ruoyi.vip  
-
-文档地址：http://doc.ruoyi.vip
-
-
-## 若依前后端分离交流群
-
-QQ群： [![加入QQ群](https://img.shields.io/badge/已满-937441-blue.svg)](https://jq.qq.com/?_wv=1027&k=5bVB1og) [![加入QQ群](https://img.shields.io/badge/887144332-blue.svg)](https://jq.qq.com/?_wv=1027&k=5eiA4DH)点击按钮入群。
