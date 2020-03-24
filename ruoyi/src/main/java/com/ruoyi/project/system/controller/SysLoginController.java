@@ -3,12 +3,17 @@ package com.ruoyi.project.system.controller;
 import java.util.List;
 import java.util.Set;
 
+import com.ruoyi.common.utils.SecurityUtils;
 import com.ruoyi.common.utils.StringUtils;
 import com.ruoyi.project.system.domain.MobileLoginUser;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpRequest;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContext;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 import com.ruoyi.common.constant.Constants;
 import com.ruoyi.common.utils.ServletUtils;
@@ -21,6 +26,8 @@ import com.ruoyi.project.system.domain.SysMenu;
 import com.ruoyi.project.system.domain.SysUser;
 import com.ruoyi.project.system.service.ISysMenuService;
 
+import javax.annotation.Resource;
+
 /**
  * 登录验证
  * 
@@ -30,6 +37,9 @@ import com.ruoyi.project.system.service.ISysMenuService;
 @RestController
 public class SysLoginController
 {
+    @Resource
+    private AuthenticationManager authenticationManager;
+
     @Autowired
     private SysLoginService loginService;
 
@@ -44,7 +54,6 @@ public class SysLoginController
 
     /**
      * 登录方法
-     * 
      * @param username 用户名, password 密码,captcha 验证码, uuid 唯一标识
      */
     @ApiOperation("登录方法")
@@ -53,7 +62,6 @@ public class SysLoginController
     {
         AjaxResult ajax = AjaxResult.error("程序异常");
         String token = loginService.login(username, password, code, uuid);  // 生成令牌
-        System.out.println("dyz--------------------------------用户登录创建的token："+token);
         if(StringUtils.isNotEmpty(token)){
             ajax = AjaxResult.success();
             ajax.put(Constants.TOKEN, token);
@@ -61,9 +69,22 @@ public class SysLoginController
         return ajax;
     }
 
+
+    @ApiOperation("移动端登录方法")
+    @PostMapping("/mobileLogin")
+    public AjaxResult mobileLogin(String username, String password, String code, String uuid)
+    {
+        AjaxResult ajax = AjaxResult.error("程序异常");
+        String token = loginService.login(username, password, code, uuid);  // 生成令牌
+        if(StringUtils.isNotEmpty(token)){
+            ajax = AjaxResult.success();
+            ajax.put(Constants.TOKEN, token);   //返回生成的token
+        }
+        return ajax;
+    }
+
     /**
      * 获取用户信息
-     * 
      * @return 用户信息
      */
     @ApiOperation("获取用户信息")
@@ -85,7 +106,6 @@ public class SysLoginController
 
     /**
      * 获取路由信息
-     * 
      * @return 路由信息
      */
     @ApiOperation("获取路由信息")
