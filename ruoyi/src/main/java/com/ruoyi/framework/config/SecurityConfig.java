@@ -100,6 +100,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
                 // 过滤请求
                 .authorizeRequests()
                 // 对于登录login 验证码captchaImage 允许匿名访问
+                // (注意：匿名访问的方法中，不能通过SecurityContextHolder.getContext().getAuthentication().getPrincipal()获取当前用户的信息)
+                //如果需要在方法中获取用户信息需要改为：.anyRequest().authenticated()
                 .antMatchers("/login","/mobileLogin", "/captchaImage","/register").anonymous()
                 .antMatchers(
                         HttpMethod.GET,
