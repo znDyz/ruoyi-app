@@ -34,8 +34,7 @@ public class MobileToken {
     @PostMapping("/checkToken")
     public AjaxResult checkToken(HttpServletRequest request)
     {
-        // 获取请求携带的令牌
-        //TODO;----待完成
+
         return null;
 
     }
