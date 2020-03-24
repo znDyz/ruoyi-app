@@ -160,7 +160,7 @@
 						}); 
 						*/
 						this.iGlobal.request({
-						    url:'/login', method:'POST',
+						    url:'/mobileLogin', method:'POST',
 							data:{
 								username:_this.username,
 								password:_this.password,
@@ -168,6 +168,7 @@
 								uuid:_this.uuid
 							}
 						}).then((res)=>{
+							console.log("登陆成功返回的数据："+JSON.stringify(res));
 							if(res.code=="200" && res.token){
 								uni.setStorageSync('token', res.token);
 								if(_this.rememberMe){
