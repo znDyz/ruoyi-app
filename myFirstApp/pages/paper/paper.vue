@@ -64,7 +64,8 @@
 				tabIndex:0,
 				tabBars: [
 					{name: '我的好友',id: 'haoyou'}, 
-					{name: '我的群组',id: 'qunzu'}
+					{name: '我的群组',id: 'qunzu'},
+					{name: '所有用户',id: 'yonghu'}
 				],
 				popupShow:false,
 				loadtext: "上拉加载更多...",
@@ -92,6 +93,18 @@
 								noreadnum:8
 							}
 						]
+					},
+					{
+						loadtext:"上拉加载更多...",
+						list:[
+							{
+								userpic:"../../static/demo/userpic/12.jpg",
+								username:"群组一号",
+								time:"10:21",
+								data:"我是第一条信息",
+								noreadnum:8
+							}
+						]
 					}
 				]
 			}
@@ -104,17 +117,17 @@
 			        _this.swiperheight = height;
 			    }
 			});
-			//加载好友信息
+			//加载全部用户信息
 			this.iGlobal.request({
-			    url:'/queryFriends', method:'GPOST',
-				data:{
-					userid:"15619232673"
-				}
+			    url:'/chat/user/list', method:'GPOST'
 			}).then((res)=>{
 				console.log(JSON.stringify(res));
-			   
-			}).catch((err)=>{
-				console.log("请求失败"+JSON.stringify(res));
+			});
+			//加载我的好友信息
+			this.iGlobal.request({
+			    url:'/chat/friend/list', method:'GPOST'
+			}).then((res)=>{
+				console.log(JSON.stringify(res));
 			});
 			
 		},
