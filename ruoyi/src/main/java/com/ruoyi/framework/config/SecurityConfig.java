@@ -35,35 +35,24 @@ import com.ruoyi.framework.security.handle.LogoutSuccessHandlerImpl;
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter
 {
-    /**
-     * 自定义用户认证逻辑
-     */
+    //自定义用户认证逻辑
     @Autowired
     private UserDetailsService userDetailsService;
     
-    /**
-     * 认证失败处理类
-     */
+    //认证失败处理类
     @Autowired
     private AuthenticationEntryPointImpl unauthorizedHandler;
 
-    /**
-     * 退出处理类
-     */
+    //退出处理类
     @Autowired
     private LogoutSuccessHandlerImpl logoutSuccessHandler;
 
-    /**
-     * token认证过滤器
-     */
+    //token认证过滤器
     @Autowired
     private JwtAuthenticationTokenFilter authenticationTokenFilter;
     
     /**
      * 解决 无法直接注入 AuthenticationManager
-     *
-     * @return
-     * @throws Exception
      */
     @Bean
     @Override
@@ -127,18 +116,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
     }
 
     
-    /**
-     * 强散列哈希加密实现
-     */
+    // 强散列哈希加密实现（实现对密码的加密）
     @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder()
     {
         return new BCryptPasswordEncoder();
     }
 
-    /**
-     * 身份认证接口
-     */
+    // 身份认证接口
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception
     {
