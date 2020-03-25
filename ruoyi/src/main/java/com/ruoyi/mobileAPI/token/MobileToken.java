@@ -29,4 +29,12 @@ public class MobileToken {
         System.out.println("移动端校验token成功!!!!!!!!!!!");
         return ajax;
     }
+
+    @ApiOperation("测试方法")
+    @PostMapping("/testMethod")
+    public AjaxResult testMethod(HttpServletRequest request)
+    {
+        AjaxResult ajax = AjaxResult.success("此方法用于调用测试接口");
+        return ajax;
+    }
 }
