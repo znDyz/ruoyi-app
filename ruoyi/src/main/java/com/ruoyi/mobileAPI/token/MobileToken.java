@@ -25,9 +25,8 @@ public class MobileToken {
     @PostMapping("/checkToken")
     public AjaxResult checkToken(HttpServletRequest request)
     {
-
-        return null;
-
+        AjaxResult ajax = AjaxResult.success("token验证成功");
+        System.out.println("移动端校验token成功!!!!!!!!!!!");
+        return ajax;
     }
-
 }
