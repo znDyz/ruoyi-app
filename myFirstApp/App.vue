@@ -21,6 +21,7 @@
 				})
 			}
 		},
+    		//dyzZn第一次测试提交
 		onHide: function() {	//app后台运行时调用
 			console.log('App Hide')
 		}
