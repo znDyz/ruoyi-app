@@ -35,8 +35,6 @@ public class MobileToken {
     public AjaxResult testMethod(HttpServletRequest request)
     {
         AjaxResult ajax = AjaxResult.success("此方法用于调用测试接口");
-        System.out.println("部署时可以删除！！！！！");
-        System.out.println("我******************");
         return ajax;
     }
 }
