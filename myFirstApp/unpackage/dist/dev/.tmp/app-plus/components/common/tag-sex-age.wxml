@@ -1,1 +1,1 @@
-<view class="u-f-ajc data-v-402ce3df"><view class="{{['tag-sex icon iconfont data-v-402ce3df',sex==0?'icon-nan':'icon-nv']}}">{{age}}</view></view>
+<view class="u-f-ajc data-v-7f818ad2"><view class="{{['tag-sex icon iconfont data-v-7f818ad2',sex==0?'icon-nan':'icon-nv']}}">{{age}}</view></view>

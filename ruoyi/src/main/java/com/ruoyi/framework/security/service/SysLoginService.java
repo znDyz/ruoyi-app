@@ -92,6 +92,7 @@ public class SysLoginService
         LoginUser loginUser = (LoginUser) authentication.getPrincipal();
         // 生成token,//设置用户token和用户其他相关信息，并将用户信息存储至redis缓存中
         String token = tokenService.createToken(loginUser);
+
         return token;
     }
 }

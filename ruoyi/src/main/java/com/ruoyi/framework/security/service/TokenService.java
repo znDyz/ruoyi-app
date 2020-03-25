@@ -56,7 +56,6 @@ public class TokenService
     public LoginUser getLoginUser(HttpServletRequest request){
         // 获取请求携带的令牌
         String token = getToken(request);
-        System.out.println("dyz--------------------------------用户退出携带的token："+token);
         if (StringUtils.isNotEmpty(token)){
             Claims claims = parseToken(token);
             // 解析对应的权限以及用户信息

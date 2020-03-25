@@ -1,15 +1,15 @@
 
-.user-space-info.data-v-5ed03e35{
+.user-space-info.data-v-c689deb0{
 	padding: 0 30rpx;
 }
-.user-space-info-item.data-v-5ed03e35{
+.user-space-info-item.data-v-c689deb0{
 	padding: 20rpx 0;
 	border-bottom: 1rpx solid #EEEEEE;
 }
-.user-space-info-item>view.data-v-5ed03e35{
+.user-space-info-item>view.data-v-c689deb0{
 	color: #AAAAAA;
 }
-.user-space-info-item>view.data-v-5ed03e35:first-child{
+.user-space-info-item>view.data-v-c689deb0:first-child{
 	color: #333333;
 	font-weight: bold;
 	padding: 15rpx 0;

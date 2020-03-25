@@ -24,6 +24,8 @@
   "usingComponents": {
     "paper-list": "/components/paper/paper-list",
     "load-more": "/components/common/load-more",
-    "paper-left-popup": "/components/paper/paper-left-popup"
+    "paper-left-popup": "/components/paper/paper-left-popup",
+    "swiper-tab-head": "/components/index/swiper-tab-head",
+    "no-thing": "/components/common/no-thing"
   }
 }

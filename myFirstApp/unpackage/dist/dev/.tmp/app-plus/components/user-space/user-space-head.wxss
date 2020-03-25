@@ -1,5 +1,5 @@
 
-.user-space-head-btn.data-v-1227ff9c{
+.user-space-head-btn.data-v-4b27f8e2{
 	background: #FFE993;
 	color: #333333;
 	border: 1rpx solid #FFE993;
@@ -7,31 +7,31 @@
 	border-radius: 10rpx;
 	font-size: 28rpx;
 }
-.active.data-v-1227ff9c{
+.active.data-v-4b27f8e2{
 	background:none;
 	color: #FFFFFF;
 	border: 1rpx solid #FFFFFF;
 }
-.user-space-head.data-v-1227ff9c{
+.user-space-head.data-v-4b27f8e2{
 	position: relative;
 	height: 500rpx;
 	overflow: hidden;
 }
-.user-space-head>image.data-v-1227ff9c{
+.user-space-head>image.data-v-4b27f8e2{
 	width: 100%;
 }
-.user-space-head-info.data-v-1227ff9c{
+.user-space-head-info.data-v-4b27f8e2{
 	position: absolute;
 	top: 150rpx;
 	left: 33%;
 	width: 30%;
 }
-.user-space-head-info>image.data-v-1227ff9c{
+.user-space-head-info>image.data-v-4b27f8e2{
 	width: 150rpx;
 	height: 150rpx;
 	border-radius: 100%;
 }
-.user-space-head-info>view.data-v-1227ff9c:first-of-type{
+.user-space-head-info>view.data-v-4b27f8e2:first-of-type{
 	color: #FFFFFF;
 	font-size: 35rpx;
 	font-weight: bold;

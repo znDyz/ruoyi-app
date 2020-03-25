@@ -1,29 +1,29 @@
 
-.home-list-item.data-v-4a8d9814{
+.home-list-item.data-v-f40d293a{
 	padding: 20rpx;
 	border-top: 1rpx solid #F4F4F4;
 	border-bottom: 1rpx solid #F4F4F4;
 	font-size: 32rpx;
 }
-.home-list-item>view.data-v-4a8d9814:first-child{
+.home-list-item>view.data-v-f40d293a:first-child{
 	color: #333333;
 }
-.home-list-item>view:first-child>view.data-v-4a8d9814:first-child{
+.home-list-item>view:first-child>view.data-v-f40d293a:first-child{
 	margin-right: 10rpx;
 }
-.home-list>view>view.data-v-4a8d9814:last-child{
+.home-list>view>view.data-v-f40d293a:last-child{
 	color: #CCCCCC;
 }
-.home-list-item-hover.data-v-4a8d9814{
+.home-list-item-hover.data-v-f40d293a{
 	background: #F4F4F4;
 }
-.icon-liulan.data-v-4a8d9814{
+.icon-liulan.data-v-f40d293a{
 	color: #007AFF;
 }
-.icon-huiyuanvip.data-v-4a8d9814{
+.icon-huiyuanvip.data-v-f40d293a{
 	color: #F0AD4E;
 }
-.icon-keyboard1.data-v-4a8d9814{
+.icon-keyboard1.data-v-f40d293a{
 	color: #FF968D;
 }
 

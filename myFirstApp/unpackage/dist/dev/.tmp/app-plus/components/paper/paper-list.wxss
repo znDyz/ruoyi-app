@@ -1,9 +1,9 @@
 
-.paper-list.data-v-19e26080{
+.paper-list.data-v-1d369773{
 	border-bottom: 1rpx solid #EEEEEE;
 	padding: 20rpx 0;
 }
-.paper-list>image.data-v-19e26080{
+.paper-list>image.data-v-1d369773{
 	width: 100rpx;
 	height: 100rpx;
 	border-radius: 100%;
@@ -11,18 +11,18 @@
 	-webkit-flex-shrink: 0;
 	        flex-shrink: 0;	/*图像不被挤压*/
 }
-.paper-list>view.data-v-19e26080{
+.paper-list>view.data-v-1d369773{
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
 	        flex: 1;
 }
-.paper-list>view>view.data-v-19e26080:first-child{
+.paper-list>view>view.data-v-1d369773:first-child{
 	font-size: 35rpx;
 }
-.paper-list>view>view:first-child>view.data-v-19e26080{
+.paper-list>view>view:first-child>view.data-v-1d369773{
 	color: #CBCBCB;
 }
-.paper-list>view>view.data-v-19e26080:last-child{
+.paper-list>view>view.data-v-1d369773:last-child{
 	color: #999999;
 }
 
