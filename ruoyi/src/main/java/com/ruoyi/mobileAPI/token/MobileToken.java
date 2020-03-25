@@ -1,5 +1,6 @@
 package com.ruoyi.mobileAPI.token;
 
+import com.ruoyi.framework.security.LoginUser;
 import com.ruoyi.framework.security.service.TokenService;
 import com.ruoyi.framework.web.domain.AjaxResult;
 import com.ruoyi.project.system.service.ISysUserService;
@@ -26,7 +27,9 @@ public class MobileToken {
     public AjaxResult checkToken(HttpServletRequest request)
     {
         AjaxResult ajax = AjaxResult.success("token验证成功");
+        LoginUser loginUser = tokenService.getLoginUser(request);
         System.out.println("移动端校验token成功!!!!!!!!!!!");
+        ajax.put(AjaxResult.DATA_TAG,loginUser);
         return ajax;
     }
 
